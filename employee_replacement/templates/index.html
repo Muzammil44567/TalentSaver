@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <style>
+    body {
+  background: linear-gradient(45deg, #3c6478, #3c6478, #3c6478);
+  
+      color: white;
+    }
+    
+    
+
+    
+    /* Gradient animation */
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">TalentSaver</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/results">Check Replacements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login">Login</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-5">
+    <div align="center">
+    <img src="\static\2ND.png" height="250" width="250">
+    </div>
+    <h1>Welcome to TalentSaver</h1>
+    <div class="row">
+    <div class="col">
+      <p>This Flask web application is designed to manage user authentication and facilitate employee data processing through machine learning techniques. It features user registration and login functionalities secured by hashed passwords. Once logged in, users can upload employee data in CSV format, which is processed to predict employee retention using a RandomForestClassifier model. The application also supports finding suitable replacement candidates for employees who leave the organization by leveraging the NearestNeighbors algorithm. The code ensures data integrity by using SQLAlchemy for database interactions, with a user model defined for managing user credentials and sessions. The application includes several routes to render different HTML templates for user interactions, upload files, and display results.</p>  
+    </div>
+    
+    <div class="col">
+      <img src="\static\1.png" height="300" width="600" >
+
+    </div>
+  </div>
+  </div>
+</body>
+</html>

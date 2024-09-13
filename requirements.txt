@@ -1,0 +1,9 @@
+pandas
+numpy
+matplotlib
+scikit-learn
+seaborn
+flask
+flask_sqlalchemy
+werkzeug
+python-dotenv
